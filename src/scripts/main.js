@@ -1,9 +1,15 @@
 $(function () {
+
+    
 	$('.image__slider').slick({
     dots: false,
     arrows: true,
-    fade: true,
-    autoplay: true
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    autoplaySpeed: 6000,
   });
 
   $('.popup-open').click(function() {

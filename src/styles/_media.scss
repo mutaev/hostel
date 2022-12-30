@@ -33,6 +33,10 @@
 }
 
 @media (max-width: 1332px) {
+  .content__review {
+    right: 175px;
+  }
+
   .footer__map {
     top: -27px;
     bottom: -100px;
@@ -51,6 +55,12 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+}
+
+@media (max-width: 1260px) {
+  // .content__review {
+  //   left: 100px;
+  // }
 }
 
 @media (max-width: 1155px) {
@@ -169,8 +179,6 @@
   }
 
 }
-
-
 
 @media (max-width: 890px) {
   .footer__bottom {

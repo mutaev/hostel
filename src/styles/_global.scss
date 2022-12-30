@@ -39,6 +39,7 @@ body {
   padding: 0 10px;
 }
 
+
 //burger
 .header__nav {
 	position: absolute;
@@ -183,3 +184,77 @@ body {
   }
 }
 //form-popup
+
+
+.prev {
+  left: 14px;
+}
+.next {
+  right: 14px;
+}
+
+.next, .prev {
+	border: none;
+  position: absolute;
+  top: 120px;
+  z-index: 99;
+  background-color: transparent;
+  border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.3s;
+	padding: 0;
+}
+
+.next:hover, .prev:hover {
+	opacity: 80%;
+}
+
+
+.slick-slide {
+  margin: 0 auto;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+}
+
+.layer {
+   margin: auto;
+   position: relative;
+}
+.viewport {
+   width: 600px;
+   height: 200px;
+   overflow-x: scroll;
+  -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+.wrapper {
+   display: flex;
+}
+.item {
+   width: 600px;
+   height: 200px;
+   background-color: var(--color);
+   flex: 1 0 600px;
+}
+.left,
+.right {
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   border: none;
+   padding: 0;
+   border-radius: 100%;
+}
+.right {
+   left: unset;
+   right: 0;
+   transform: translate(50%, -50%);
+}
+.left svg,
+.right svg {
+   display: block;
+   width: 48px;
+   height: 48px;
+}
