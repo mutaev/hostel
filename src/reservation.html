@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__inner">
+            <a class="logo" href="#">
+              <img src="img/logo.svg" alt="logo">
+            </a>
+            <nav class="menu menu--none">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">номера</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__address header__address--none">г. москва, Серебрянический пер. д.3, стр.1</div>
+            <a class="header__phone header__phone--none" href="tel:89168872647">+8 916 887-26-47</a>
+            <a class="header__btn header__btn--none" href="">забронировать</a>
+            <nav class="header__nav">
+              <ul class="header__menu menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">номера</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">контакты</a>
+                </li>
+                <div class="header__address">г. москва, Серебрянический пер. д.3, стр.1</div>
+                <a class="header__phone" href="tel:89168872647">+8 916 887-26-47</a>
+                <a class="header__btn" href="">забронировать</a>
+            </nav>
+          </div>
+          <div class="menu-burger__header">
+            <span></span>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="main">
+
+
+    </main>
+
+
+    <footer class="footer">
+      
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <h2 class="footer__title">Добро пожаловать<br> <span class="footer__title-accent">в наш хостел!</span></h2>
+              <button class="footer__content-btn popup-open">
+                Свзаться<br> с нами
+              </button>
+            </div>
+            <div class="footer__content-block">
+              <a class="footer__phone" href="tel:89168872647">+8 916 887-26-47</a>
+              <p class="footer__content-text">Доступно бронирование по телефону</p>
+            </div>
+            <div class="footer__content-block">
+              <a class="footer__mail" href="mailto:bankhostel@ya.ru">bankhostel@ya.ru</a>
+              <p class="footer__content-text">Связь с администрацией хостела</p>
+            </div>
+            <div  class="footer__map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/serebryanicheskiy_pereulok_3s1/Z04YcANmTEMGQFtvfXt0cXhhbA==/?ll=37.638794%2C55.749014&utm_medium=mapframe&utm_source=maps&z=16.17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Серебрянический переулок, 3с1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUreUrXpB" class="footer__map-main" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            <div class="footer__map-mobile" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/serebryanicheskiy_pereulok_3s1/Z04YcANmTEMGQFtvfXt0cXhhbA==/?ll=37.638794%2C55.749014&utm_medium=mapframe&utm_source=maps&z=16.17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Серебрянический переулок, 3с1 — Яндекс Карты</a><iframe class="footer__map-mobile-frame" src="https://yandex.ru/map-widget/v1/-/CCUreUrXpB"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__bottom">
+          <a class="footer__bottom-link" href="#">Доступные номера</a>
+          <a class="footer__bottom-btn" href="">забронировать</a>
+          <p class="footer__bottom-text">ЗАО «Компания Норд-Ост», ИНН: 4545345345</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="popup-fade">
+    <div class="popup">
+      <form class="form">
+        <h2 class="form__title">Оставьте заявку<br> и  мы свяжемся с вами!</h2>
+        <div class="form__inner">
+          <input class="form__input" type="text" placeholder="Ваше имя">
+          <input class="form__input" id="phone" type="text" placeholder="Номер телефона">
+        </div>
+        <textarea class="form__area" placeholder="Ваш вопрос"></textarea>
+        <button class="form__btn" type="submit">Отправить заявку</button>
+        <p class="form__text">Нажимая кнопку “оставить заявку”, вы даёте согласие на обработку персональных данных</p>
+      </form>
+      <button class="popup-close" style="max-width: 30px;"><img src="img/closecircle.svg" alt="icon close"></button>
+      <img class="popup__decore" src="img/popup-decore1.png" alt="image">
+    </div>		
+  </div>
+
+  
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+  integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -55,12 +55,28 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .room__price-block {
+    top: -30px;
+  }
 }
 
-@media (max-width: 1260px) {
-  // .content__review {
-  //   left: 100px;
-  // }
+@media (max-width: 1240px) {
+  .aside,  .content__teg{
+    display: none;
+  }
+  .content__inner {
+    justify-content: center;
+  }
+  .content__review {
+    right: 163px;
+  }
+  .pagination {
+    justify-content: center;
+  }
+  .content__filter-btn {
+    display: block;
+  }
+  
 }
 
 @media (max-width: 1155px) {
@@ -178,9 +194,77 @@
     right: 17%;
   }
 
+    //
+    .header__nav2.open-menu2{
+      left: 0;
+    }
+  
+    .aside-mob {
+      display: block;
+    }
+    .header__nav2 {
+      display: block;
+      position: absolute;
+      top: 60px;
+      padding-left: 30px;
+      padding-right: 30px;
+      left: 0;
+      background-color: rgb(243, 243, 243);
+      box-shadow: 0px 0px 34px rgba(227, 227, 227, 0.25);
+      box-shadow: #ccc;
+      width: 100%;
+      z-index: 9999;
+      border: 2px solid #EAB14E;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      left:-110%;
+      height: 535px;
+      padding-top: 29px;
+    }
+
+    .menu-burger__header2 {
+      float: right;
+      border: none;
+      background-color: transparent;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        opacity: 80%;
+      }
+    }
+
+    .about__content {
+      gap: 20px;
+    }
+
+    .room__top {
+      flex-direction: column;
+      align-items: center;
+    }
+    .room__price-block {
+      position: static;
+      margin-bottom: 25px;
+    }
+    .room__text {
+      max-width: 100%;
+    }
+
+    .room__items {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 73px;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      gap: 26px;
+  }
+
 }
 
 @media (max-width: 890px) {
+  .content__item {
+    flex-direction: column;
+  }
   .footer__bottom {
     flex-direction: column;
     gap: 50px;
@@ -198,9 +282,27 @@
   .top__drop {
     padding-right: 80px;
   }
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .room__bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  
 }
 
 @media (max-width: 710px) {
+  .content__review {
+    left: 30px;
+    top: 273px;
+  }
+ 
   .top__drop::after {
     display: none;
   }
@@ -229,6 +331,36 @@
     top: 12%;
     left: 4%;
     right: 4%;
+  }
+  .benefits__items {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+  }
+  .benefits__item{
+    text-align: center;
+    &:nth-child(2) {
+      border: none;
+      padding: 0;
+    }
+  }
+  .benefits__img {
+    margin: 0 auto 20px;
+  }
+  .room__price-block {
+    flex-direction: column;
+  }
+  .room__items {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .room__title{
+    line-height: 121%;
+    font-size: 35px;
+    text-align: center;
   }
 }
 
@@ -284,5 +416,45 @@
     display: none;
   }
 
+  .about__top-img {
+    width: 100%;
+  }
+
+  .about__item {
+    width: 100%;
+  }
+  .about__items {
+    flex-direction: column;
+  }
+  .content__top-title, .about__title, .benefits__title {
+    font-size: 40px;
+    line-height: 110%;
+  }
+  .benefits__title {
+    margin-bottom: 60px;
+  }
 }
 
+@media (max-width: 415px) {
+  .content__item-inner {
+    margin: 0 auto;
+    max-width: 273px;
+    max-height: 273px;
+  }
+  .content__item {
+    padding: 15px 15px 18px 15px;
+  }
+  .content__review {
+    top: 220px;
+  }
+  .about__text-inner {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 365px) {
+  .content__item-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+} 
