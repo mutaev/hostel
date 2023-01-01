@@ -4,8 +4,6 @@ $(function () {
 	$('.image__slider').slick({
     dots: false,
     arrows: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     autoplay: true,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
@@ -104,13 +102,10 @@ $(function () {
     }
 	});
 
-	
 
 
 	
-
-  $("#phone").mask("+7 (999) 999-99-99");
-  // $("#phone2").mask("+7 (999) 999-99-99");
-  // $("#phone3").mask("+7 (999) 999-99-99");
+$("#phone").mask("+7 (999) 999-99-99");
+$("#phone2").mask("+7 (999) 999-99-99");
 })
 

@@ -948,8 +948,276 @@
     gap: 66px;
   }
   &__bottom-block {}
+  &__review {
+    background-color: #C8A466;
+    padding: 11px 14px 14px 15px;
+    font-size: 13px;
+    line-height: 15px;
+    max-width: 128px;
+    max-height: 72px;
+    text-align: center;
+    position: relative;
+    bottom: -12px;
+    color: #fff;
+  }
+  &__stars {
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  &__star {
+
+  }
 }
 //room
+
+
+//reserv
+.reservation {
+  &__top {}
+  &__title {
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+  &__status {
+    background-color: #FFF0DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 37px 10px;
+    margin-bottom: 50px;
+  }
+  &__status-step {
+    color: #948A7A;
+  }
+  &__status-step--active {
+    color: #C8A466;
+  }
+  &__num {
+    border: 1px solid #948A7A;
+    border-radius: 40px;
+    padding: 9px 14px;
+    margin-right: 14px;
+    font-size: 14px;
+    line-height: 140%;
+    color: #948A7A;
+  }
+  &__num--active {
+    color: #C8A466;
+    border-color: #C8A466;
+  }
+  &__num--active-ok {
+    color: #C8A466;
+    padding: 9px 9px;
+    border-color: #C8A466;
+  }
+  &__subtitle {
+    @extend %regular-playfair;
+    font-size: 35px;
+    text-align: center;
+    line-height: 150%;
+  }
+  &__subtitle--m40{
+    margin-bottom: 40px;
+  }
+  &__subtitle--m10{
+    margin-bottom: 10px;
+  }
+  &__text-3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 50px;
+  }
+}
+//reserv
+
+//entry
+.entry {
+  
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+  &__item {}
+  &__top-text {
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #000;
+  
+  }
+  &__day {
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #AAA4A4;
+    margin-bottom: 40px;
+  }
+  &__line {
+    width: 24px;
+    height: 1px;
+    background-color: #000;
+  }
+  &__title-date {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 140%;
+    text-align: center;
+  }
+  &__btn {
+    display: block;
+    text-align: center;
+  }
+}
+//entry
+
+
+//form-re
+.form-reserv {
+  max-width: 587px;
+  margin: 0 auto 110px;
+  &__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 50px;
+  }
+  &__inner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &__input {
+    padding: 0;
+    width: 100%;
+    border: none;
+    font-weight: 400;
+    font-size: 19px;
+    color: #333333;
+    line-height: 130%;
+    border-bottom:  1px solid #DADADA;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 130%;
+      color: #DADADA;
+    }
+  }
+  &__bottom {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+  }
+  &__back {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    text-decoration-line: underline;
+    color: #ACACAC;
+    transition: all 0.3s;
+    &:hover {
+      color: #C8A466;
+    }
+  }
+  &__btn {
+    display: block;
+    border: 1px solid #C8A466;
+    border-radius: 50%;
+    height: 146px;
+    padding-top: 46px;
+    width: 146px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 120.2%;
+    color: #C8A466;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s;
+    &:hover {
+      color: #E3E3E3;
+      border-color: #E3E3E3;
+    }
+  }
+  &__btn img {
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
+//form-re
+
+//pay
+.pay {
+  max-width: 482px;
+  margin: 0 auto;
+  &__inner {
+    border-bottom: 1px solid #F2F2F2;
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  &__price {}
+  &__bottom {}
+  &__back {}
+  &__btn {}
+}
+.pay-entry {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+  &__item {}
+  &__top-text {
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #000;
+  
+  }
+  &__day {
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #AAA4A4;
+    margin-bottom: 40px;
+  }
+  &__line {
+    width: 24px;
+    height: 1px;
+    background-color: #000;
+  }
+  &__title-date {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 140%;
+    text-align: center;
+  }
+  &__btn {
+    display: block;
+    text-align: center;
+  }
+}
+//pay
+
 
 
 @import 'media';
