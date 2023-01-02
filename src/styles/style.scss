@@ -86,6 +86,7 @@
     border-radius: 50%;
     width: 850px;
     height: 850px;
+  
   }
   &__info {
     display: flex;
@@ -95,6 +96,7 @@
     // position: absolute !important;
     // right: 0;
     // top: 0;
+    border: none;
     width: 100%; 
     height: 100%;
   }
@@ -131,6 +133,10 @@
     color: #fff;
     margin-bottom: 10px;
     display: block;
+    transition: all 0.3s;
+    &:hover {
+      color: #C8A466;
+    }
   }
   &__content-text {
     font-weight: 400;
@@ -279,7 +285,7 @@
       position: absolute;
       width: 24px;
       height: 24px;
-      top: -2px;
+      top: -1px;
       left: 0;
     }
     &::before {
@@ -287,7 +293,7 @@
       background-image: url(../img/top-arrow-min.svg);
       background-repeat: no-repeat;
       position: absolute;
-      top: 9px;
+      top: 11px;
       right: 5px;
       width: 9px;
       height: 5px;
@@ -302,12 +308,12 @@
     margin-left: 40px;
     &::after {
       content: '';
-      background-image: url(../img/calendar-top.svg);
+      background-image: url(../img/drop-people.svg);
       background-repeat: no-repeat;
       position: absolute;
       width: 24px;
       height: 24px;
-      top: -2px;
+      top: -1px;
       left: 0;
     }
     &::before {
@@ -315,7 +321,7 @@
       background-image: url(../img/top-arrow-min.svg);
       background-repeat: no-repeat;
       position: absolute;
-      top: 9px;
+      top: 11px;
       right: 5px;
       width: 9px;
       height: 5px;
@@ -330,6 +336,10 @@
     color: #000000;
     cursor: pointer;
     margin-right: 10px;
+    transition: all 0.3s;
+    &:hover {
+      color: #C8A466;
+    }
   }
   &__link {
     position: absolute;
@@ -772,8 +782,8 @@
     content: '';
     position: absolute;
     opacity: 0;
-    top: .3rem;
-    left: .3rem;
+    top: .33rem;
+    left: .33rem;
     width: 7px;
     height: 7px;
     border-radius: 50%;
@@ -1034,6 +1044,14 @@
     color: #000;
     margin-bottom: 50px;
   }
+  &__pay-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000;
+    text-align: center;
+    margin-bottom: 70px;
+  }
 }
 //reserv
 
@@ -1063,6 +1081,7 @@
   }
   &__line {
     width: 24px;
+    margin-top: -301px;
     height: 1px;
     background-color: #000;
   }
@@ -1075,6 +1094,28 @@
   &__btn {
     display: block;
     text-align: center;
+    display: block;
+    border: 1px solid #C8A466;
+    border-radius: 50%;
+    height: 146px;
+    padding-top: 46px;
+    margin: 80px auto;
+    width: 146px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 120.2%;
+    color: #C8A466;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s;
+    &:hover {
+      color: #E3E3E3;
+      border-color: #E3E3E3;
+    }
+  }
+  &__btn img {
+    margin: 0 auto;
+    margin-top: 15px;
   }
 }
 //entry
@@ -1162,61 +1203,175 @@
 
 //pay
 .pay {
-  max-width: 482px;
-  margin: 0 auto;
-  &__inner {
-    border-bottom: 1px solid #F2F2F2;
-  }
+  max-width: 481px;
+  margin: 0 auto 155px;
   &__title {
     font-size: 20px;
     line-height: 150%;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 28px;
   }
-  &__price {}
-  &__bottom {}
-  &__back {}
-  &__btn {}
-}
-.pay-entry {
   &__inner {
     display: flex;
-    align-items: center;
+    gap: 52px;
+    align-items: flex-start;
     justify-content: center;
-    gap: 100px;
+    border-bottom: 1px solid #F2F2F2;
   }
   &__item {}
-  &__top-text {
-    font-size: 14px;
-    line-height: 140%;
-    text-align: center;
-    color: #000;
-  
-  }
-  &__day {
-    font-size: 18px;
-    line-height: 140%;
-    text-align: center;
-    color: #AAA4A4;
-    margin-bottom: 40px;
-  }
   &__line {
     width: 24px;
     height: 1px;
     background-color: #000;
+    margin-top: 37px;
   }
-  &__title-date {
-    font-weight: 400;
-    font-size: 34px;
+  &__date {
+    font-size: 25px;
     line-height: 140%;
-    text-align: center;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__price {
+    font-size: 30px;
+    line-height: 127%;
+    color: #C8A466;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+  &__price span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 127%;
+    color: #333333;
   }
   &__btn {
-    display: block;
+    width: 146px;
+    cursor: pointer;
+    background: #C8A466;
+    height: 146px;
+    border-radius: 50%;
+    border: none; 
+    font-size: 20px;
+    line-height: 120.2%;
     text-align: center;
+    color: #fff;
+    transition: all 0.3s;
+    &:hover  {
+      opacity: 80%;
+    }
+  }
+  &__btn img {
+    margin: 8px auto 0;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    text-decoration-line: underline;
+    color: #ACACAC;
+    transition: all 0.3s;
+    position: relative;
+    top: -45px;
+    &:hover {
+      color: #C8A466;
+    }
   }
 }
 //pay
+
+//calendar
+.calendar {
+  width: 316px;
+  height: 254px;
+  &__header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  &__header-prev, &__header-next {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+  }
+  &__header-prev {
+    left: 12px;
+  }
+  &__header-next {
+    right: 12px;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+  }
+  &__days-weeks {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 21px;
+  }
+  &__day-week {
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+    // margin-right: 30px;
+    // &:last-child {
+    //   m
+    // }
+  }
+  &__days {
+    display: grid;
+    grid-template-columns: repeat(7, 32px);
+    text-align: right;
+    gap: 14px;
+    row-gap: 10px;
+  }
+  &__day {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+    border-radius: 50%;
+    transition: all 0.3s;
+    &:hover {
+      background: #C8A466;
+      color: #fff;
+    }
+    &:first-child {
+      grid-column: 2;
+    }
+  }
+  &__day--off {
+    color: #969696;
+  }
+  &__day--bg {
+    background-color: #FFFAF1;
+  }
+  &__day--select {
+    background-color: #C8A466;
+    color: #fff;
+  }
+}
+//calendar
+
 
 
 

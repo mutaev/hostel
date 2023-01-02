@@ -295,9 +295,11 @@
     padding: 29px 10px;
   }
   .reservation__status-step {
-    width: 270px;
+    width: 285px;
   }
-
+  .entry__inner {
+    gap: 5px;
+  }
 
   
 }
@@ -308,7 +310,7 @@
     top: 273px;
   }
  
-  .top__drop::after {
+  .top__drop::after, .entry__line {
     display: none;
   }
   .top__date, .top__peoples {
@@ -395,6 +397,11 @@
   .form-reserv {
     margin-bottom: 0;
   }
+
+  .entry__inner {
+    flex-direction: column;
+    gap: 90px;
+  }
   
 }
 
@@ -470,6 +477,11 @@
   .reservation__status-step {
     max-width: 350px;
   }
+  .top__drop {
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+  }
 }
 
 @media (max-width: 415px) {
@@ -487,6 +499,28 @@
   }
   .about__text-inner {
     flex-direction: column;
+  }
+  .pay__inner {
+    gap: 15px;
+  }
+  .pay__bottom {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .pay__link {
+    position: static;
+    align-items: center;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .pay {
+    margin-bottom: 40px;
+  }
+  .next, .prev {
+    top: 99px;
   }
 }
 

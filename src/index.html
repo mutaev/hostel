@@ -42,10 +42,16 @@
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="#">контакты</a>
                 </li>
+                <li class="menu__list-item">
+                  <div class="header__address">г. москва, Серебрянический пер. д.3, стр.1</div>
+                </li>
+                <li class="menu__list-item">
+                  <a class="header__phone" href="tel:89168872647">+8 916 887-26-47</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="header__btn" href="">забронировать</a>
+                </li>
               </ul>
-                <div class="header__address">г. москва, Серебрянический пер. д.3, стр.1</div>
-                <a class="header__phone" href="tel:89168872647">+8 916 887-26-47</a>
-                <a class="header__btn" href="">забронировать</a>
             </nav>
           </div>
           <div class="menu-burger__header">
@@ -67,9 +73,36 @@
               <button class="top__date">
                 Дата заезда - даты выезда
               </button>
-              <button class="top__peoples">
-                Количество человек
-              </button>
+
+              <div class="drop-1">
+                <button class="top__peoples dropbtn" onclick="myFunction()">
+                  Количество человек
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <div class="bulgy-radios" role="radiogroup" aria-labelledby="bulgy-radios-label">
+                    <label>
+                      <input type="radio" name="options" checked data-sync="1" value="1">
+                      <span class="radio"></span>
+                      <span class="label aside__label">Отдельная комната</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="options" data-sync="2" value="2">
+                      <span class="radio"></span>
+                      <span class="label aside__label" >На 2 человека</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="options" data-sync="3" value="3">
+                      <span class="radio"></span>
+                      <span class="label aside__label">На 4 человека</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="options" data-sync="4" value="4">
+                      <span class="radio"></span>
+                      <span class="label aside__label">На 6 человек</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
               <a class="top__link" href="">
                 <img src="img/top-btn-ic.png" alt="button">
               </a>
@@ -97,22 +130,22 @@
               <h5 class="aside__sub-title">Категория</h5>
               <div class="bulgy-radios" role="radiogroup" aria-labelledby="bulgy-radios-label">
                 <label>
-                  <input type="radio" name="options" checked />
+                  <input type="radio" name="options" checked data-sync="1" value="1">
                   <span class="radio"></span>
                   <span class="label aside__label">Отдельная комната</span>
                 </label>
                 <label>
-                  <input type="radio" name="options" />
+                  <input type="radio" name="options" data-sync="2" value="2">
                   <span class="radio"></span>
                   <span class="label aside__label">На 2 человека</span>
                 </label>
                 <label>
-                  <input type="radio" name="options" />
+                  <input type="radio" name="options" data-sync="3" value="3">
                   <span class="radio"></span>
                   <span class="label aside__label">На 4 человека</span>
                 </label>
                 <label>
-                  <input type="radio" name="options" />
+                  <input type="radio" name="options" data-sync="4" value="4">
                   <span class="radio"></span>
                   <span class="label aside__label">На 6 человек</span>
                 </label>
@@ -152,22 +185,22 @@
                     <h5 class="aside__sub-title">Категория</h5>
                     <div class="bulgy-radios" role="radiogroup" aria-labelledby="bulgy-radios-label">
                       <label>
-                        <input type="radio" name="options" checked />
+                        <input type="radio" name="options" checked data-sync="1" value="1">
                         <span class="radio"></span>
                         <span class="label aside__label">Отдельная комната</span>
                       </label>
                       <label>
-                        <input type="radio" name="options" />
+                        <input type="radio" name="options" data-sync="2" value="2">
                         <span class="radio"></span>
                         <span class="label aside__label">На 2 человека</span>
                       </label>
                       <label>
-                        <input type="radio" name="options" />
+                        <input type="radio" name="options" data-sync="3" value="3">
                         <span class="radio"></span>
                         <span class="label aside__label">На 4 человека</span>
                       </label>
                       <label>
-                        <input type="radio" name="options" />
+                        <input type="radio" name="options" data-sync="4" value="4">
                         <span class="radio"></span>
                         <span class="label aside__label">На 6 человек</span>
                       </label>
@@ -444,8 +477,8 @@
               <a class="footer__mail" href="mailto:bankhostel@ya.ru">bankhostel@ya.ru</a>
               <p class="footer__content-text">Связь с администрацией хостела</p>
             </div>
-            <div  class="footer__map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/serebryanicheskiy_pereulok_3s1/Z04YcANmTEMGQFtvfXt0cXhhbA==/?ll=37.638794%2C55.749014&utm_medium=mapframe&utm_source=maps&z=16.17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Серебрянический переулок, 3с1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUreUrXpB" class="footer__map-main" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-            <div class="footer__map-mobile" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/serebryanicheskiy_pereulok_3s1/Z04YcANmTEMGQFtvfXt0cXhhbA==/?ll=37.638794%2C55.749014&utm_medium=mapframe&utm_source=maps&z=16.17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Серебрянический переулок, 3с1 — Яндекс Карты</a><iframe class="footer__map-mobile-frame" src="https://yandex.ru/map-widget/v1/-/CCUreUrXpB"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            <div class="footer__map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.635367%2C55.747881&mode=routes&rtext=55.751427%2C37.618878~55.750428%2C37.646561&rtt=auto&ruri=ymapsbm1%3A%2F%2Forg%3Foid%3D1023322799~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcxMjEyNRJR0KDQvtGB0YHQuNGPLCDQnNC%2B0YHQutCy0LAsINCh0LXRgNC10LHRgNGP0L3QuNGH0LXRgdC60LjQuSDQv9C10YDQtdGD0LvQvtC6LCAz0YExIgoNFZYWQhVwAF9C&source=constructorLink&um=constructor%3A3bbab60c76b5f5427486837b1112aa5b6c67dab329d9622c8e1efe14e15153ee&utm_medium=mapframe&utm_source=maps&z=14.79" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe class="footer__map-main" src="https://yandex.ru/map-widget/v1/-/CCUrbMtTpA" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            <div class="footer__map-mobile" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:rgb(2, 1, 1);font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.634254%2C55.750371&mode=routes&rtext=55.750428%2C37.646561~55.751426%2C37.618876&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcxMjEyNRJR0KDQvtGB0YHQuNGPLCDQnNC%2B0YHQutCy0LAsINCh0LXRgNC10LHRgNGP0L3QuNGH0LXRgdC60LjQuSDQv9C10YDQtdGD0LvQvtC6LCAz0YExIgoNFZYWQhVwAF9C~ymapsbm1%3A%2F%2Forg%3Foid%3D1023322799&source=constructorStatic&um=constructor%3A3bbab60c76b5f5427486837b1112aa5b6c67dab329d9622c8e1efe14e15153ee&utm_medium=mapframe&utm_source=maps&z=13.57" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe class="footer__map-mobile-frame" src="https://yandex.ru/map-widget/v1/-/CCUrbZrMdB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
           </div>
         </div>
       </div>

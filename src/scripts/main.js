@@ -34,7 +34,10 @@ $(function () {
 	});
 
 
-
+    var $radios = $('input[data-sync]');
+    $radios.change(function() {
+        $radios.filter('[data-sync="' + $(this).attr('data-sync') + '"]').prop('checked', true);
+    });
 
 	$('.menu-burger__header').click(function(){
     $('.menu-burger__header').toggleClass('open-menu');
@@ -108,4 +111,20 @@ $(function () {
 $("#phone").mask("+7 (999) 999-99-99");
 $("#phone2").mask("+7 (999) 999-99-99");
 })
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
+    }
+}
+}
 
