@@ -75,7 +75,7 @@ body {
 
 
 //popup-one
-.popup-fade {
+.popup-fade, .popup-goodbye {
 	display: none;
 }
 .popup-fade:before {
@@ -89,10 +89,10 @@ body {
 	opacity: 0.7;
 	z-index: 9999;
 }
-.popup {
+.popup, .popup-goodbye__inner {
 	position: fixed;
-	top: 20%;
-	left: 28%;
+	top: 13%;
+	left: 32%;
   right: 28%;
 	padding: 50px 50px 30px;
 	max-width: 697px;
@@ -106,9 +106,14 @@ body {
 	position: absolute;
 	top: 30px;
 	right: 30px;
+  padding: 0;
   width: 30px;
   height: 30px;
+  transition: all 0.3s;
   border: none;
+  &:hover {
+    opacity: 70%;
+  }
   background-color:transparent;
   cursor: pointer;
 }
@@ -198,6 +203,21 @@ body {
   }
 }
 //form-popup
+//pop
+.popup-goodbye__title {
+  @extend %regular-playfair;
+  font-size: 45px;
+  line-height: 130%;
+  margin-bottom: 20px;
+  margin-top: 130px;
+}
+.popup-goodbye__text {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  color: #000;
+}
+//pop
 
 
 .prev {
@@ -291,10 +311,10 @@ body {
   position: absolute;
   background-color: #ffffff;
   left: 14px;
-  padding-left: 10px;
+  padding-left: 5px;
   top: 40px;
-  padding-top: 10px;
-  min-width: 245px;
+  padding-top: 30px;
+  min-width: 260px;
   border-radius: 15px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -303,17 +323,47 @@ body {
 .dropdown a:hover {background-color: #ddd;}
 .show {display: block;}
 
-.dropbtn2 {
-  background-color: #3498DB;
-  color: white;
-  border: none;
-  cursor: pointer;
+// .dropbtn2 {
+//   background-color: #3498DB;
+//   color: white;
+//   border: none;
+//   cursor: pointer;
+// }
+// .drop-2 {
+//   position: relative;
+// }
+// .dropdown-content2 {
+//   display: none;
+//   position: absolute;
+//   background-color: #ffffff;
+//   left: 0;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   top: 40px;
+//   padding-bottom: 19px;
+//   min-width: 220px;
+//   border-radius: 15px;
+//   overflow: auto;
+//   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//   z-index: 1;
+// }
+//
+
+//
+.top__menu.open-menu3, .top__menu2.open-menu4{
+  display: block;
 }
-.drop-2 {
+
+
+.drop-2, .drop-3 {
   position: relative;
+  z-index: 99;
 }
-.dropdown-content2 {
+
+.top__menu, .top__menu2 {
   display: none;
+  position: absolute;
+  top: 60px;
   position: absolute;
   background-color: #ffffff;
   left: 0;
@@ -326,8 +376,30 @@ body {
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+
 }
-.show {display: block;}
+.top__menu2 {
+  left: -30px;
+}
 
-//
+.top__menu-btn2 {
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: #C8A466;
+  }
+}
 
+.top__menu-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 70%;
+  }
+}

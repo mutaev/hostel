@@ -1,6 +1,4 @@
 $(function () {
-
-    
 	$('.image__slider').slick({
     dots: false,
     arrows: true,
@@ -8,25 +6,22 @@ $(function () {
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
     autoplaySpeed: 6000,
-  });
+    });
 
-  $('.popup-open').click(function() {
+    $('.popup-open').click(function() {
 		$('.popup-fade').fadeIn();
 		return false;
 	});
-	
 	$('.popup-close').click(function() {
 		$(this).parents('.popup-fade').fadeOut();
 		return false;
 	});
-  
 	$(document).keydown(function(e) {
 		if (e.keyCode === 27) {
 			e.stopPropagation();
 			$('.popup-fade').fadeOut();
 		}
 	});
-	
 	$('.popup-fade').click(function(e) {
 		if ($(e.target).closest('.popup').length == 0) {
 			$(this).fadeOut();
@@ -48,6 +43,18 @@ $(function () {
 	$('.menu-burger__header2').click(function(){
     $('.menu-burger__header2').toggleClass('open-menu2');
     $('.header__nav2').toggleClass('open-menu2');
+    $('body').toggleClass('fixed-page');
+    });
+
+	$('.top__menu-btn').click(function(){
+    $('.top__menu-btn').toggleClass('open-menu3');
+    $('.top__menu').toggleClass('open-menu3');
+    $('body').toggleClass('fixed-page');
+    });
+
+	$('.top__menu-btn2').click(function(){
+    $('.top__menu-btn2').toggleClass('open-menu4');
+    $('.top__menu2').toggleClass('open-menu4');
     $('body').toggleClass('fixed-page');
     });
 
@@ -105,16 +112,14 @@ $(function () {
     }
 	});
 
-
-
-	
-$("#phone").mask("+7 (999) 999-99-99");
-$("#phone2").mask("+7 (999) 999-99-99");
+    $("#phone").mask("+7 (999) 999-99-99");
+    $("#phone2").mask("+7 (999) 999-99-99");
 })
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
 window.onclick = function(event) {
 if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -128,19 +133,4 @@ if (!event.target.matches('.dropbtn')) {
 }
 }
 
-function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
-}
-window.onclick = function(event) {
-if (!event.target.matches('.dropbtn2')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content2");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-    }
-    }
-}
-}
 

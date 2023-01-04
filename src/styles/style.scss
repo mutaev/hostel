@@ -60,7 +60,6 @@
     align-items: center;
     gap: 43px;
   }
-  &__list-item {}
   &__list-link {
     font-size: 16px;
     line-height: 19px;
@@ -105,12 +104,6 @@
     padding: 100px 0 70px;
     position: relative;
   }
-  &__content-inner {
-    
-  }
-  &__inner {
-
-  }
   &__title {
     @extend %regular-playfair;
     font-size: 65px;
@@ -144,7 +137,6 @@
     color: #A5A5A5;
     line-height: 19px;
   }
-  &__mail {}
   &__content-btn {
     border: 1px solid #C8A466;
     background-color: transparent;
@@ -180,7 +172,6 @@
       color: #C8A466;
     }
   }
-  &__bottom-link {}
   &__bottom-btn {
     position: relative;
     padding-bottom: 11px;
@@ -206,7 +197,6 @@
 
     }
   }
-  &__bottom-text {}
   &__map-mobile {
     display: none !important;
   }
@@ -452,7 +442,6 @@
     justify-content: space-between;
     gap: 54px;
   }
-  &__main {}
   &__main-top {
     position: relative;
     display: flex;
@@ -525,7 +514,6 @@
     max-width: 318px;
     max-height: 263px;
   }
-  &__item-box {}
   &__item-title {
     font-size: 24px;
     line-height: 127%;
@@ -882,9 +870,6 @@
     gap: 159px;
     margin-bottom: 14px;
   }
-  &__texts {
-  }
-  &__text {}
   &__text--size {
     margin-bottom: 40px;
   }
@@ -928,7 +913,6 @@
   }
   &__item {
     max-width: 424px;
-    // border-right: 1px solid #E3E3E3;
   }
   &__item:nth-child(2) {
     max-width: 424px;
@@ -956,7 +940,6 @@
 
 //room
 .room {
-  &__inner {}
   &__title {
     margin-bottom: 40px;
   }
@@ -1022,8 +1005,6 @@
     gap: 20px;
     margin-bottom: 73px;
   }
-  &__item {}
-  &__img {}
   &__bottom {
     margin-bottom: 103px;
     display: flex;
@@ -1031,7 +1012,6 @@
     align-items: flex-start;
     gap: 66px;
   }
-  &__bottom-block {}
   &__review {
     background-color: #C8A466;
     padding: 11px 14px 14px 15px;
@@ -1060,7 +1040,6 @@
 
 //reserv
 .reservation {
-  &__top {}
   &__title {
     margin: 0 auto 40px;
     text-align: center;
@@ -1141,7 +1120,6 @@
   &__inner--drop {
     min-height: 455px;
   }
-  &__item {}
   &__top-text {
     font-size: 14px;
     line-height: 140%;
@@ -1296,7 +1274,6 @@
     justify-content: center;
     border-bottom: 1px solid #F2F2F2;
   }
-  &__item {}
   &__line {
     width: 24px;
     height: 1px;
@@ -1402,10 +1379,6 @@
     line-height: 140%;
     text-transform: uppercase;
     color: #000000;
-    // margin-right: 30px;
-    // &:last-child {
-    //   m
-    // }
   }
   &__days {
     display: grid;

@@ -18,6 +18,7 @@
   .popup {
     left: 25%;
     right: 25%;
+    top: 10%;
   }
 
   .footer__map {
@@ -135,6 +136,7 @@
     left:-110%;
     height: 399px;
     padding-top: 29px;
+    z-index: 99999;
   }
   .menu-burger__header span{
     top: 16px;
@@ -201,6 +203,7 @@
   
     .aside-mob {
       display: block;
+      border: none;
     }
     .header__nav2 {
       display: block;
@@ -209,12 +212,11 @@
       padding-left: 30px;
       padding-right: 30px;
       left: 0;
-      background-color: rgb(243, 243, 243);
-      box-shadow: 0px 0px 34px rgba(227, 227, 227, 0.25);
-      box-shadow: #ccc;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       width: 100%;
       z-index: 9999;
-      border: 2px solid #EAB14E;
+      border: 1px solid #EAB14E;
       border-radius: 10px;
       transition: all 0.3s ease;
       left:-110%;
@@ -299,6 +301,16 @@
   }
   .entry__inner {
     gap: 5px;
+  }
+  .entry__inner--drop {
+    flex-direction: column;
+    gap: 90px;
+    height: 910px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .entry__line--drop {
+    display: none;
   }
 
   
@@ -524,9 +536,28 @@
   }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 375px) {
   .content__item-flex {
     flex-direction: column;
     gap: 20px;
+  }
+  .top__menu, .top__menu2 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .entry__inner--drop {
+    width: 275px;
+  }
+
+  .calendar-mob {
+    width: 275px;
+    left: -5px;
+  }
+  .calendar__days--mob, .calendar__days-weeks--mob {
+    gap: 8px;
+  }
+  .menu-burger__header2-mob{
+    position: relative;
+    left: -20px;
   }
 } 
